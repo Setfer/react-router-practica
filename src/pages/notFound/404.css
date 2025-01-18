@@ -1,0 +1,7 @@
+.not-found{
+  background-color: rgb(51, 32, 32);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -6,6 +6,7 @@ import Header from './components/header/header'
 import About from './pages/about/about'
 import Home from './pages/home/home'
 import Contact from './pages/contact/contact'
+import NotFound from './pages/notFound/404'
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
         <Routes>
         <Route path="/" element={< Home/>}/>
         <Route path="/about" element={<About />}/>
-        <Route path="/contact" element={<Contact />}/>
+        <Route path="/contact/:name" element={<Contact />}/>
+        <Route path="/*" element={<NotFound />}/>
         </Routes>
      </div>
    
